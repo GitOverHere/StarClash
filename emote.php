@@ -34,7 +34,7 @@ $sql = "SELECT * FROM tokens where token=$token";
 $query = $conn->query($sql);
 if($query->num_rows == 1){
 	
-	$gameindex = rand(0,9);
+	$gameindex = rand(0,5);
 	
 	$command = "/duel $opponent $gameindex";
 	
